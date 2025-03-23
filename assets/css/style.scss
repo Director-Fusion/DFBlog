@@ -1,0 +1,124 @@
+---
+---
+
+@import "jekyll-theme-slate";
+@import url("https://fusioncybersecurity.us/css/style.css");
+
+:root {
+	--primary: #1c262f;
+	--primary-light: #212d37;
+	--secondary: #0ee951;
+	--tertiary: #00dabf;
+	--gradient: linear-gradient(to right, #0ee951, #00dabf);
+}
+
+/* General adjustments */
+#main-content, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1c262f;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #1c262f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+}
+
+.titler {
+	color: #0ee951;
+}
+
+.logo img {
+	border: 0;
+	box-shadow: none;
+	filter: none;
+	width: 520px;
+	height: 118px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* Wrapper adjustments */
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Post list styles */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  border-bottom: 1px solid #1c262f;
+  padding: 20px 0;
+}
+
+.post-meta {
+  display: block;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.post-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+/* === POST PAGE STYLES === */
+.post-content {
+  color: #FAFAFA;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.post-title {
+  color: #DEDEDE;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.post-meta {
+  color: #888888;
+  font-size: 0.9rem;
+}
+
+.post-content a {
+  color: #0ee951;
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  text-decoration: none;
+}
+
+/* Footer styles */
+.site-footer {
+  background-color: #212d37;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
