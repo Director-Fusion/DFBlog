@@ -68,7 +68,7 @@ Add this Artifact to your velociraptor instance:
 
 ![Add the artifact here]({{ "/assets/images/addartifact.png" | relative_url }})
 
-### Corect Appearance in GUI
+### Correct Appearance in GUI
 
 ![Artifact Appearance in VC GUI]({{ "/assets/images/threatfox-artifact.png" | relative_url }})
 
