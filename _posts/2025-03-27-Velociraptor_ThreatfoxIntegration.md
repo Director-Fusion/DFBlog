@@ -99,7 +99,7 @@ Then the final part of the hunt checks if the IOCS exist inside the Event ID 3 e
 
 Ohhh nooo, I really didn't plan this... Now we see a hit to the Threatfox IOC database we can now go to our event logs and look for the powershell.exe hit. Additionally, you can modify that query to return the relevant information you'd want for triaging. However, I was limited to space to generate a useful screenshot. In the real world you can make this yours and use it as you need to use it. 
 
-If you went to the lgo data you would see:
+If you went to the log data you would see:
 
 ![Event Log of IOC Match]({{ "/assets/images/eventlogdata.png" | relative_url }})
 
