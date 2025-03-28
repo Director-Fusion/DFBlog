@@ -62,7 +62,7 @@ Add this Artifact to your velociraptor instance:
 
 ### Go to Artifacts Section
 
-![Artifacts Section](DFBlog/assets/images/view-artifacts.png)
+![Artifacts Section]({{ relative_url }}/assets/images/view-artifacts.png)
 
 ### Add the Artifact
 
