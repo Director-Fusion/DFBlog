@@ -62,7 +62,7 @@ Add this Artifact to your velociraptor instance:
 
 ### Go to Artifacts Section
 
-![Artifacts Section](/assets/images/view-artifacts.png)
+![Artifacts Section]({{baseurl}}/assets/images/view-artifacts.png)
 
 ### Add the Artifact
 
