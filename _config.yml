@@ -3,3 +3,5 @@ description: "Incident Response and Hacking Blog for Director Fusion"
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+url: "https://director-fusion.github.io"
+baseurl: "/DFBlog"
