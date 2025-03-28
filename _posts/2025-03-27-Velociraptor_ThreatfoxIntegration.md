@@ -62,19 +62,19 @@ Add this Artifact to your velociraptor instance:
 
 ### Go to Artifacts Section
 
-![Artifacts Section](../assets/images/view-artifacts.png)
+{{ '/assets/images/view-artifacts.png' | relative_url }}
 
 ### Add the Artifact
 
-![Add the artifact here](../assets/images/addartifact.png)
+{{ '/assets/images/addartifact.png' | relative_url }}
 
 ### Corect Appearance in GUI
 
-![Artifact Appearance in VC GUI](../assets/images/threatfox-artifact.png)
+{{ '/assets/images/threatfox-artifact.png' | relative_url }}
 
 This yaml artifact will create a SERVER artifact to aid hunts when called in the Hunts section. Once that is added moved to the Notebooks section:
 
-![Create a notebopl ](../assets/images/vc-notebooks.png)
+{{ '/assets/images/vc-notebooks.png' | relative_url }}
 
 ### VQL Hunt Notebook Syntax
 
@@ -93,13 +93,13 @@ This hunt will create two variables TFData which calls the artifact we just crea
 
 Then the final part of the hunt checks if the IOCS exist inside the Event ID 3 event logs parsed from the machine(s) queried. If you have hits expect output from the notebook as seen here:
 
-![Threatfox Hit](../assets/images/threatfox-hit.png)
+{{ '/assets/images/threatfox-hit.png' | relative_url }}
 
 Ohhh nooo, I really didn't plan this... Now we see a hit to the Threatfox IOC database we can now go to our event logs and look for the powershell.exe hit. Additionally, you can modify that query to return the relevant information you'd want for triaging. However, I was limited to space to generate a useful screenshot. In the real world you can make this yours and use it as you need to use it. 
 
 If you went to the lgo data you would see:
 
-![Event Log of IOC Match](../assets/images/eventlogdata.png)
+{{ '/assets/images/eventlogdata.png' | relative_url }}
 
 ### Successful Hunt!
 
