@@ -20,10 +20,6 @@
   color: #f8f9fa;
 }
 
-h1, h2, h3 {
-  color: #f8f9fa;
-}
-
 /* Header styles */
 header {
   background-color: #1c262f;
@@ -34,6 +30,11 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5rem;
+  color: #f8f9fa;
+}
+
+
+h1, h2, h3 {
   color: #f8f9fa;
 }
 
