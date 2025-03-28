@@ -4,4 +4,4 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
 url: "https://director-fusion.github.io"
-base_url: "/DFBlog"
+baseurl: "/DFBlog"
