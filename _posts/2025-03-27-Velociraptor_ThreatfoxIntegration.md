@@ -7,7 +7,7 @@ author: Cory Keller
 
 If you're using an edr tool you might find this a bit redundant but the facts are not every organization is on the same maturity level as you are, this is aimed to fill a gap and enable a threat hunt against the data aggregated. Some organizations are budget constrained and need something that doesn't break the bank or your annual budget. For this we will utilize sysmon and velociraptor. 
 
-<img title="Obligatory Clever Girl" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jimchines.com%2F2018%2F05%2Featen-by-velociraptors%2Fclevergirl%2F&psig=AOvVaw0QbIa4rf5kSLs9ZF_UebtL&ust=1743211171084000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCZ8-bNq4wDFQAAAAAdAAAAABAE">
+![Obligatory Clever Girl](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jimchines.com%2F2018%2F05%2Featen-by-velociraptors%2Fclevergirl%2F&psig=AOvVaw0QbIa4rf5kSLs9ZF_UebtL&ust=1743211171084000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCZ8-bNq4wDFQAAAAAdAAAAABAE)
 
 In incident response it is common to check connections to determine if a user actually connected to an malicious IP/host. Not every organization has access to a network security monitoring stack to get items like Zeek logs. However, one thing that would be far easier to implement or that is already implemented in the organization is sysmon. For those unfamiliar "System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log." ([Sysmon Documentation][sysmon-docs], 2025). 
 
@@ -62,19 +62,19 @@ Add this Artifact to your velociraptor instance:
 
 ### Go to Artifacts Section
 
-![Artifacts Section](./assets/images/view-artifacts.png)
+![Artifacts Section](/assets/images/view-artifacts.png)
 
 ### Add the Artifact
 
-![Add the artifact here](./assets/images/addartifact.png)
+![Add the artifact here](/assets/images/addartifact.png)
 
 ### Corect Appearance in GUI
 
-![Artifact Appearance in VC GUI](./assets/images/threatfox-artifact.png)
+![Artifact Appearance in VC GUI](/assets/images/threatfox-artifact.png)
 
 This yaml artifact will create a SERVER artifact to aid hunts when called in the Hunts section. Once that is added moved to the Notebooks section:
 
-![Create a notebopl ](./assets/images/vc-notebooks.png)
+![Create a notebopl ](/assets/images/vc-notebooks.png)
 
 ### VQL Hunt Notebook Syntax
 
@@ -93,13 +93,13 @@ This hunt will create two variables TFData which calls the artifact we just crea
 
 Then the final part of the hunt checks if the IOCS exist inside the Event ID 3 event logs parsed from the machine(s) queried. If you have hits expect output from the notebook as seen here:
 
-![Threatfox Hit](./assets/images/threatfox-hit.png)
+![Threatfox Hit](/assets/images/threatfox-hit.png)
 
 Ohhh nooo, I really didn't plan this... Now we see a hit to the Threatfox IOC database we can now go to our event logs and look for the powershell.exe hit. Additionally, you can modify that query to return the relevant information you'd want for triaging. However, I was limited to space to generate a useful screenshot. In the real world you can make this yours and use it as you need to use it. 
 
 If you went to the lgo data you would see:
 
-![Event Log of IOC Match](./assets/images/eventlogdata.png)
+![Event Log of IOC Match](/assets/images/eventlogdata.png)
 
 ### Successful Hunt!
 
