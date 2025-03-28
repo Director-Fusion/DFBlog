@@ -7,7 +7,7 @@ author: Cory Keller
 
 If you're using an edr tool you might find this a bit redundant but the facts are not every organization is on the same maturity level as you are, this is aimed to fill a gap and enable a threat hunt against the data aggregated. Some organizations are budget constrained and need something that doesn't break the bank or your annual budget. For this we will utilize sysmon and velociraptor. 
 
-![Obligatory Clever Girl](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jimchines.com%2F2018%2F05%2Featen-by-velociraptors%2Fclevergirl%2F&psig=AOvVaw0QbIa4rf5kSLs9ZF_UebtL&ust=1743211171084000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCZ8-bNq4wDFQAAAAAdAAAAABAE](https://www.jimchines.com/2018/05/eaten-by-velociraptors/clevergirl/)
+![Clever Girl](https://www.jimchines.com/2018/05/eaten-by-velociraptors/clevergirl/)
 
 In incident response it is common to check connections to determine if a user actually connected to an malicious IP/host. Not every organization has access to a network security monitoring stack to get items like Zeek logs. However, one thing that would be far easier to implement or that is already implemented in the organization is sysmon. For those unfamiliar "System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log." ([Sysmon Documentation][sysmon-docs], 2025). 
 
